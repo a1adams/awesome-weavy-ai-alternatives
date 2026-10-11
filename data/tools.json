@@ -1,7 +1,7 @@
 {
   "keyword": "weavy ai alternative",
   "title": "Best Weavy AI Alternatives After the Figma Acquisition (2026)",
-  "lastChecked": "2026-10-05",
+  "lastChecked": "2026-10-11",
   "capabilityChecks": [
     {
       "key": "publicApi",
@@ -50,6 +50,8 @@
           "code": "https://www.wireflow.ai/api/mcp"
         }
       ],
+      "moneyPage": "https://www.wireflow.ai/weavy-ai-alternative",
+      "moneyPageLabel": "Wireflow Weavy AI alternative page",
       "capabilities": {
         "publicApi": true,
         "webhooks": true,
@@ -164,7 +166,7 @@
       "modelSupport": "Pre-loaded models and pre-installed custom nodes, run on hosted GPUs",
       "freeTier": "yes",
       "repo": null,
-      "note": "Comfy states plainly: \"Build and edit workflows for free — credits are consumed only when the GPU runs.\"",
+      "note": "Comfy states plainly: \"Build and edit workflows for free, and credits are consumed only when the GPU runs.\"",
       "quickstart": null,
       "capabilities": {
         "publicApi": true,

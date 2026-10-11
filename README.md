@@ -4,13 +4,20 @@
 
 A maintained dataset of **weavy ai alternative** options: what each one connects to, where it stops, how to run it, and a link to the vendor's own pricing page rather than a price that will be wrong by the time you read it.
 
-The tables below are generated from [`data/tools.json`](data/tools.json) by [`scripts/update.js`](scripts/update.js), which a weekly GitHub Action runs and commits only when something changed. Every tool on this list is a hosted product with no first-party open-source repo, so there are no star counts to report — the refresh re-stamps the check date and regenerates the tables from the data.
+1. **[Wireflow](https://www.wireflow.ai)** - Best Overall, node canvas with a REST API on every tier
+2. **Figma Weave (formerly Weavy)** - the incumbent canvas, now billed separately from Figma seats
+3. **Krea** - broad model catalog with a public API and Node Apps execution
+4. **Flora AI** - design studio canvas with a technique execution API
+5. **Comfy Cloud** - managed hosting for the open-source ComfyUI graph
+6. **Freepik Spaces** - stock library and brand assets wired into a canvas
+
+The tables below are generated from [`data/tools.json`](data/tools.json) by [`scripts/update.js`](scripts/update.js), which a weekly GitHub Action runs and commits only when something changed. Every tool on this list is a hosted product with no first-party open-source repo, so there are no star counts to report. The refresh re-stamps the check date and regenerates the tables from the data.
 
 <!-- LAST-CHECKED:START -->
-Live repository data last checked **2026-10-05** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
+Live repository data last checked **2026-10-11** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
 <!-- LAST-CHECKED:END -->
 
-Maintained by [a1adams](https://github.com/a1adams). Corrections welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
+Maintained by [a1adams](https://github.com/a1adams). Corrections are welcome, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Contents
 
@@ -47,7 +54,7 @@ One row per tool, one column per thing people actually check before committing. 
 
 ## Capability scores
 
-The score counts how many of the checks in [`data/tools.json`](data/tools.json) → `capabilityChecks` a tool passes. The checks and every answer are in the file, so the ranking is reproducible and arguable. Disagree with a cell? Open an issue naming the tool, the check and the evidence.
+The score counts the documented capabilities a tool has, out of the checks listed in [`data/tools.json`](data/tools.json) under `capabilityChecks`. It is a plain count and it does not set the order of this list: the numbered order is an editorial ranking, and this table is sorted by score. The checks and every answer are in the file, so each cell can be checked. Disagree with a cell? Open an issue naming the tool, the check and the evidence.
 
 <!-- CAPABILITY-SCORES:START -->
 | Tool | Public API | Webhooks | Per-node cost visibility | Batch and array support | Claude Code skill | Score |
@@ -56,7 +63,7 @@ The score counts how many of the checks in [`data/tools.json`](data/tools.json) 
 | **[Krea](#3-krea)** | ✅ | ✅ | ❌ | ❌ | ❌ | **2/5** |
 | **[Flora AI](#4-flora-ai)** | ✅ | ✅ | ❌ | ❌ | ❌ | **2/5** |
 | **[Comfy Cloud](#5-comfy-cloud)** | ✅ | ❌ | ❌ | ❌ | ❌ | **1/5** |
-| **[Figma Weave (formerly Weavy)](#2-figma-weave-formerly-weavy)** | — | — | — | — | — | **0/5** |
+| **[Figma Weave (formerly Weavy)](#2-figma-weave-formerly-weavy)** | n/a | n/a | n/a | n/a | n/a | **0/5** |
 | **[Freepik Spaces](#6-freepik-spaces)** | ❌ | ❌ | ❌ | ❌ | ❌ | **0/5** |
 <!-- CAPABILITY-SCORES:END -->
 
@@ -72,7 +79,7 @@ The score counts how many of the checks in [`data/tools.json`](data/tools.json) 
 - **Best for:** creative and technical teams who want a visual canvas without giving up programmatic control.
 - **Standout:** full REST API with webhooks, batch execution, and per-node cost visibility on every plan including free.
 - **Links:**
-  - [Homepage](https://www.wireflow.ai)
+  - [Wireflow Weavy AI alternative page](https://www.wireflow.ai/weavy-ai-alternative)
   - [Docs](https://www.wireflow.ai/docs/mcp)
   - [Pricing](https://www.wireflow.ai/pricing)
   - [REST endpoint](https://www.wireflow.ai/ai-workflow-api)
@@ -101,7 +108,7 @@ https://www.wireflow.ai/api/mcp
   - [Docs](https://help.figma.com)
   - [Pricing](https://weave.figma.com/pricing)
 
-**Getting started:** no public CLI or SDK to install — start from the [docs](https://help.figma.com).
+**Getting started:** no public CLI or SDK to install, so start from the [docs](https://help.figma.com).
 
 ### 3. Krea
 
@@ -115,9 +122,8 @@ https://www.wireflow.ai/api/mcp
   - [Homepage](https://www.krea.ai)
   - [Docs](https://www.krea.ai/docs/)
   - [Pricing](https://www.krea.ai/pricing)
-  - [cost-transparent batch pipelines](https://www.wireflow.ai/batch-image-generation-api)
 
-**Getting started:** no public CLI or SDK to install — start from the [docs](https://www.krea.ai/docs/).
+**Getting started:** no public CLI or SDK to install, so start from the [docs](https://www.krea.ai/docs/).
 
 ### 4. Flora AI
 
@@ -134,7 +140,7 @@ https://www.wireflow.ai/api/mcp
   - [Pricing](https://flora.ai/pricing)
   - [Flora AI](https://www.florafauna.ai)
 
-**Getting started:** no public CLI or SDK to install — start from the [docs](https://docs.flora.ai).
+**Getting started:** no public CLI or SDK to install, so start from the [docs](https://docs.flora.ai).
 
 ### 5. Comfy Cloud
 
@@ -144,14 +150,13 @@ https://www.wireflow.ai/api/mcp
 
 - **What it is:** official managed hosting for ComfyUI graphs, compatible with the local server API.
 - **Limits:** the ecosystem still assumes engineering time. Custom node compatibility, model management, and version drift are your problem, and there is no built-in cost accounting. If you want a [hosted canvas without the GPU and DevOps overhead](https://www.wireflow.ai/comfyui-alternative-no-gpu), that tradeoff is the whole decision.
-- **Note:** Comfy states plainly: "Build and edit workflows for free — credits are consumed only when the GPU runs."
+- **Note:** Comfy states plainly: "Build and edit workflows for free, and credits are consumed only when the GPU runs."
 - **Links:**
   - [Homepage](https://www.comfy.org/cloud)
   - [Docs](https://docs.comfy.org)
   - [Pricing](https://www.comfy.org/cloud/pricing)
-  - [hosted canvas without the GPU and DevOps overhead](https://www.wireflow.ai/comfyui-alternative-no-gpu)
 
-**Getting started:** no public CLI or SDK to install — start from the [docs](https://docs.comfy.org).
+**Getting started:** no public CLI or SDK to install, so start from the [docs](https://docs.comfy.org).
 
 ### 6. Freepik Spaces
 
@@ -168,7 +173,7 @@ https://www.wireflow.ai/api/mcp
   - [Pricing](https://www.freepik.com/pricing)
   - [Freepik Spaces](https://www.freepik.com)
 
-**Getting started:** no public CLI or SDK to install — start from the [docs](https://www.freepik.com/ai/docs).
+**Getting started:** no public CLI or SDK to install, so start from the [docs](https://www.freepik.com/ai/docs).
 
 ## What actually changed under Figma
 
@@ -243,7 +248,7 @@ That is where Wireflow lands: full REST API on every tier, webhooks, batch execu
 
 ## How this list is maintained
 
-- [`data/tools.json`](data/tools.json) is the source of truth. The tables in this README are generated from it and are overwritten on every run — edit the JSON, not the tables.
+- [`data/tools.json`](data/tools.json) is the source of truth. The tables in this README are generated from it and are overwritten on every run, so edit the JSON, not the tables.
 - [`scripts/update.js`](scripts/update.js) fetches star counts and latest release tags from the GitHub API for the tools that publish an official repo, stamps the check date, and regenerates the tables. `--offline` regenerates without the network; `--check` exits non-zero if the README has drifted from the data.
 - [`.github/workflows/refresh.yml`](.github/workflows/refresh.yml) runs it weekly and on manual dispatch, and commits only when the data actually changed.
 - Prices are deliberately not stored as numbers. A stale price in a comparison table is worse than no price, so the table links to each vendor's own pricing page.
@@ -254,7 +259,7 @@ Corrections and additions are welcome, including corrections to the entry for th
 
 ## License
 
-[CC0 1.0 Universal](LICENSE) — public domain. Take the data, fork the list, no attribution required.
+[CC0 1.0 Universal](LICENSE), public domain. Take the data, fork the list, no attribution required.
 
 ---
 
